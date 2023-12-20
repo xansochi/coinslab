@@ -1,4 +1,75 @@
-# ProjectName ReadMeProjectName is a versatile project designed for [provide a brief description of the project's purpose]. This comprehensive guide will provide you with everything you need to know to get started with the project, from installation instructions to a detailed description of its features.## Table of Contents- [Features](#features)- [Installation](#installation)  - [Prerequisites](#prerequisites)  - [Clone the Repository](#clone-the-repository)  - [Configuration](#configuration)  - [Build and Run](#build-and-run)- [Usage](#usage)- [Contributing](#contributing)- [License](#license)## FeaturesList the key features and functionalities of your project:- Feature 1: [Describe feature 1]- Feature 2: [Describe feature 2]- Feature 3: [Describe feature 3]## InstallationFollow these steps to install and run ProjectName on your system.### PrerequisitesBefore you begin, ensure you have the following dependencies and tools installed:- [Dependency 1](#link-to-dependency-1)- [Dependency 2](#link-to-dependency-2)- [Dependency 3](#link-to-dependency-3)### Clone the Repository1. Open your terminal or command prompt.2. Use the following command to clone the ProjectName repository:git clone https://github.com/your-username/ProjectName.git   Replace `your-username` with your GitHub username.### Configuration1. Change your working directory to the cloned repository:cd ProjectName2. [Configuration Step 1: Describe how to configure the project, such as setting up environment variables, creating configuration files, etc.]3. [Configuration Step 2: If there are additional configuration steps, outline them here.]4. Install the required dependencies using:[package manager] install### Build and Run1. Connect your device or start an emulator.2. To build and run the project, use the following command:[build/run command]This will build the project and install it on your connected device or emulator.## Usage1. [Usage Step 1: Provide a brief overview of how to use the project, such as user registration, logging in, or main functionalities.]2. [Usage Step 2: If the project has multiple use cases, provide additional usage instructions here.]## ContributingWe welcome contributions to ProjectName. If you would like to contribute to the development or report issues, please follow these guidelines:1. Fork the repository.2. Create a new branch for your feature or bug fix.3. Make your changes and commit them with descriptive messages.4. Push your changes to your fork.5. Submit a pull request to the main repository.## LicenseProjectName is licensed under the [License Type](LICENSE). [Provide a link to the full license text if applicable.Thank you for choosing ProjectName! If you encounter any issues or have suggestions for improvements, please don't hesitate to [create an issue](https://github.com/your-username/ProjectName/issues) or [contribute to the project](#contributing). We look forward to your feedback and collaboration.
+
+# COINS LAB
+
+This app is a cryptocurrency tracker
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Tech Stack
+
+**Client:** Flutter, Dart
+
+**Server:** Node, Express
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
+```
+    
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Authors
+
+- [@xansochi](https://www.github.com/xansochi)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at @xansochi
+
+
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
