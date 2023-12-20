@@ -6,7 +6,7 @@ This application is a cryptocurrency tracker written in Dart using the Flutter f
 
 ## Screenshots
 
-![App Screenshot](https://bnlab.ru/img/coinsmock.png)
+<!-- ![App Screenshot](https://bnlab.ru/img/coinsmock.png) -->
 ![App Screenshot](https://bnlab.ru/img/coinsmock2.png)
 ![App Screenshot](https://bnlab.ru/img/coinsmock3.png)
 
