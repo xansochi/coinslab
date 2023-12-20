@@ -6,11 +6,12 @@ import '../Portfolio/portfolio_api.dart';
 
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
+import '../constants_api.dart';
 
 Future updateCoinList(coinForApiPut,context,userName,userJwt) async {
   // dynamic userJwt = context.read<UserProvider>().userJwt;
   // dynamic userName = context.read<UserProvider>().userName;
-  String finalUrlForPutApi = 'https://node-auth-api-two.vercel.app/api/auth/$userName';
+  String finalUrlForPutApi = ConstantsForApi.UpdateCoinsApiURL+userName;
   List testArray = jsonDecode(transferData);
   testArray.add(coinForApiPut);
   String testString = json.encode(

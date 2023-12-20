@@ -1,13 +1,14 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import '../constants_api.dart';
 
-Future deleteSomeCoinList(String tokenData,newData) async {
+Future deleteSomeCoinList(String tokenData,newData,String userName) async {
   List testArray = newData;
   String testString = json.encode(
       testArray
         );
   final response = await http.put(
-    Uri.parse('https://node-auth-api-two.vercel.app/api/auth/stefan'),
+    Uri.parse(ConstantsForApi.UpdateCoinsApiURL+userName),
       headers: <String, String>{
         'Content-Type': 'application/json',
         'x-access-token': tokenData,

@@ -32,10 +32,10 @@ class PagePortfolio extends StatefulWidget {
   List? forUpdatePriceList = [];
 
 
-  void _updateAndDeleteCoin(index,tokenString,forDeleteCoinsList) {
+  void _updateAndDeleteCoin(index,tokenString,forDeleteCoinsList,userName) {
   forDeleteCoinsList.removeAt(index);
   print('Delete $index in new array');
-  deleteSomeCoinList(tokenString,forDeleteCoinsList);
+  deleteSomeCoinList(tokenString,forDeleteCoinsList,userName);
   print('End of Magic');
 }
 
@@ -108,7 +108,7 @@ class PagePortfolio extends StatefulWidget {
               Dismissible(
               key: Key(item.toString()),
               onDismissed: (direction) {
-               _updateAndDeleteCoin(index,context.read<UserProvider>().userJwt,forDeleteCoinsList);
+               _updateAndDeleteCoin(index,context.read<UserProvider>().userJwt,forDeleteCoinsList,context.read<UserProvider>().userName);
                 // setState(() {});
                 ScaffoldMessenger.of(context)
                .showSnackBar(SnackBar(

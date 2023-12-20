@@ -7,8 +7,9 @@ import 'dart:async';
 import '../../mock/mockList.dart';
 import '../../components/Modal/modal_add_coin.dart';
 import '../../const/themes_const.dart';
+import '../../api/constants_api.dart';
 
-String getCoinDataUrl = 'https://api.coingecko.com/api/v3/coins/ethereum?localization=false&tickers=false&market_data=true&community_data=false&developer_data=false&sparkline=false';
+
 
 class ModalButton extends StatefulWidget {
 
@@ -22,7 +23,7 @@ class ModalButtonState extends State<ModalButton> {
   List mainViewList = []; 
   List original = [];
   Map? coinsFromApi;
-  String? dataUrlState = getCoinDataUrl;
+  String? dataUrlState = ConstantsForApi.getCoinDataUrl;
   bool updateData = false;
 
 // ----------------------------

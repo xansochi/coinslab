@@ -2,6 +2,7 @@
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'constants_api.dart';
 
 class News {
   final String kind;
@@ -20,7 +21,7 @@ class News {
 
 class NewsService {
   Future<List<dynamic>> getAll() async {
-    const url = 'https://cryptopanic.com/api/v1/posts/?auth_token=a996b61a42aa24fb425ffedd96927a5e4037ed93&public=true&&regions=ru';
+    const url = ConstantsForApi.newsApiURL;
     final uri = Uri.parse(url);
     final response = await http.get(uri);
 

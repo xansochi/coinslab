@@ -4,6 +4,7 @@ import 'dart:convert';
 import '../../models/coins_model.dart';
 import '../../models/singlton.dart';
 import '../../models/dashboard_model.dart';
+import '../constants_api.dart';
 
 
 const List mockCoinsList = [
@@ -21,7 +22,7 @@ num statusCode = 0;
 String transferData = '';
 
 Future<List?> fetchCoinsPortfolio(String tokenData, String userName) async {
-  String userNameApiURL = 'https://node-auth-api-two.vercel.app/api/auth/$userName';
+  String userNameApiURL = ConstantsForApi.UpdateCoinsApiURL+userName;
   final response = await http.get(
     Uri.parse(userNameApiURL),
     headers: {

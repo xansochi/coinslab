@@ -1,11 +1,12 @@
 import 'dart:convert';
 import 'dart:async';
 import 'package:http/http.dart' as http;
+import '../constants_api.dart';
 
 Future fetchCurrentPrices(data,resultOfUpdatePrice) async {
     String stringCurrentPriceApi(data) {
     String usdPart = '&vs_currencies=usd';
-    String urlStringForUpdatePrice = 'https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2C';
+    String urlStringForUpdatePrice = ConstantsForApi.urlStringForUpdatePrice;
     data.forEach((e)=>urlStringForUpdatePrice = urlStringForUpdatePrice+('${e['idcoin']}%2C'));
     urlStringForUpdatePrice = urlStringForUpdatePrice+usdPart;
     return urlStringForUpdatePrice;
