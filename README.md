@@ -1,20 +1,12 @@
 
 # COINS LAB
 
-This app is a cryptocurrency tracker
+This application is a cryptocurrency tracker written in Dart using the Flutter framework. 
 
 
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
 
 
 ## Tech Stack
@@ -24,21 +16,51 @@ This app is a cryptocurrency tracker
 **Server:** Node, Express
 
 
-## Installation
+## API ENDPOINTS
 
-Install my-project with npm
+    1. Node + Express server for authentication users and save data.
+    2. Coingecko API for all coins and data.
+    3. Cryptopanic.com API - all news.
+    4. icon.horse API for parse news icon 
 
+
+## Installation for development
+
+
+1 Get the Flutter SDK
+
+2 Update your path
+
+3 Run flutter doctor
 ```bash
-  npm install my-project
-  cd my-project
+  flutter doctor
 ```
+
+4 Install Android Studio
+
+5 Set up your Android device or Android emulator
+
+6 Run flutter doctor 
+```bash
+  flutter doctor --android-licenses
+```
+
+7* Visual Studio 2022 or Visual Studio Build Tools 2022 When installing Visual Studio or only the Build Tools,
+you need the “Desktop development with C++” workload installed for building windows, including all of its default components.
+
+8 Update and Run
+```bash
+  flutter pub get
+  flutter run
+```
+
     
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/xansochi/coinslab.git
 ```
 
 Go to the project directory
@@ -50,13 +72,13 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install
+  flutter pub get
 ```
 
 Start the server
 
 ```bash
-  npm run start
+  flutter run
 ```
 
 
@@ -68,6 +90,8 @@ Start the server
 ## Feedback
 
 If you have any feedback, please reach out to us at @xansochi
+
+
 
 
 
