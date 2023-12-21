@@ -9,8 +9,6 @@ import 'package:top_snackbar_flutter/top_snack_bar.dart';
 import '../constants_api.dart';
 
 Future updateCoinList(coinForApiPut,context,userName,userJwt) async {
-  // dynamic userJwt = context.read<UserProvider>().userJwt;
-  // dynamic userName = context.read<UserProvider>().userName;
   String finalUrlForPutApi = ConstantsForApi.UpdateCoinsApiURL+userName;
   List testArray = jsonDecode(transferData);
   testArray.add(coinForApiPut);
@@ -32,7 +30,7 @@ Future updateCoinList(coinForApiPut,context,userName,userJwt) async {
   if (response.statusCode == 200) {
          showTopSnackBar(
           Overlay.of(context),
-          CustomSnackBar.success(backgroundColor :const Color.fromARGB(255, 7, 187, 97),message:response.body));
+          CustomSnackBar.success(backgroundColor :const Color.fromARGB(255, 7, 187, 97),message:'Актив добавлен.Обновите информацию в портфеле'));
     return response.body;
   } else {
           showTopSnackBar(

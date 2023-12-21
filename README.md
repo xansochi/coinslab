@@ -1,8 +1,8 @@
 
 # COINS LAB
 
-This application is a cryptocurrency tracker written in Dart using the Flutter framework. 
-
+This application is a cryptocurrency tracker written in Dart using the Flutter framework.
+The project was created for training and watch how Flutter app works in production.Not for commercial use.
 
 ## Screenshots
 
@@ -24,6 +24,9 @@ This application is a cryptocurrency tracker written in Dart using the Flutter f
     2. Coingecko API for all coins and data.
     3. Cryptopanic.com API - all news.
     4. icon.horse API for parse news icon 
+
+    URL CONST at /api/constant_api.dart
+
 
 
 ## Installation for development
