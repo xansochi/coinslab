@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../provider/news_provider.dart';
-import 'dart:math';
 
 class NewsPage extends StatefulWidget {
   const NewsPage({super.key});
@@ -61,9 +60,9 @@ class _NewsPageState extends State<NewsPage> {
                 children: [
                   // Text('#${todo.kind.toString()}'),
                   Text('#${article.sourceTitle.toString()}',
-                  style: TextStyle(color: Color.fromARGB(255, 11, 50, 77),fontSize: 10),),
+                  style: const TextStyle(color: Color.fromARGB(255, 11, 50, 77),fontSize: 10),),
                   Text('${date.day}.${date.month}.${date.year} ${date.hour}:${date.minute}',
-                  style: TextStyle(color: Color.fromARGB(255, 11, 50, 77),fontSize: 8),
+                  style: const TextStyle(color: Color.fromARGB(255, 11, 50, 77),fontSize: 8),
                   ),
                   
 

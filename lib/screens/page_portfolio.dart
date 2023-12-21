@@ -43,7 +43,7 @@ class PagePortfolio extends StatefulWidget {
   Widget build(BuildContext context) {
   return  Scaffold(
   floatingActionButton:Align(
-    alignment: Alignment(0.09, 1.48),
+    alignment: const Alignment(0.09, 1.48),
     child: SizedBox(
         height: 150.0,
         width: 100.0,
@@ -52,7 +52,7 @@ class PagePortfolio extends StatefulWidget {
           child: 
 
           FloatingActionButton(
-    backgroundColor: Color.fromARGB(255, 255, 226, 64),
+    backgroundColor: const Color.fromARGB(255, 255, 226, 64),
     onPressed: ()=>fetchCurrentPrices(forUpdatePriceList,_resultOfUpdatePrice).then((value) => setState((){_resultOfUpdatePrice = value;})),
     tooltip: 'Modal',
       child:const Column(children: [
